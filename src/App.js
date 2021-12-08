@@ -8,6 +8,9 @@ import { useState } from "react";
 
 const App = () => {
   const [search, setSearch] = useState('')
+
+  const pth = window.location.host.includes('localhost') ? '/' : '/recipe/client/'
+
   return (
     <div>
       <Toaster
@@ -17,8 +20,8 @@ const App = () => {
       <Navbar setSearch={setSearch} />
 
       <Routes>
-        <Route path='/' element={<Recipes search={search} />} />
-        <Route path='/recipe/:id' element={<Recipe />} />
+        <Route path={pth} element={<Recipes search={search} />} />
+        <Route path={`${pth}/recipe/:id`} element={<Recipe />} />
       </Routes>
 
       <Footer />
