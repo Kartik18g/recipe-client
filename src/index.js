@@ -4,7 +4,7 @@ import './index.scss'
 import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.render(
-    <BrowserRouter>
+    <BrowserRouter basename={'https://shapeai.github.io/recipe-client'}>
         <App />
     </BrowserRouter>
 
