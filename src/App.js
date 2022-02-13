@@ -10,6 +10,7 @@ const App = () => {
   const [search, setSearch] = useState('')
 
   const pth = window.location.host.includes('localhost') ? '/' : '/recipe/client/'
+  console.log(pth)
 
   return (
     <div>
