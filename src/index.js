@@ -3,6 +3,7 @@ import App from './App'
 import './index.scss'
 import { BrowserRouter } from 'react-router-dom'
 
+console.log("hit hsi si")
 ReactDOM.render(
     <BrowserRouter >
         <App />
